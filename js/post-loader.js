@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     const response = await fetch(`pages/${fileName}`);
     if (!response.ok) throw new Error('Post not found');
-    
+
     let content = await response.text();
-    
+
     // UTF-8 BOM 제거
     if (content.charCodeAt(0) === 0xFEFF) {
       content = content.slice(1);
@@ -33,28 +33,28 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 function parseAndRenderMarkdown(rawContent) {
   const frontMatterMatch = rawContent.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
-  
+
   let markdownContent = rawContent;
   let metadata = {};
 
   if (frontMatterMatch) {
     const frontMatter = frontMatterMatch[1];
     markdownContent = frontMatterMatch[2];
-    
+
     const lines = frontMatter.split(/\r?\n/);
     lines.forEach((line) => {
       const colonIndex = line.indexOf(':');
       if (colonIndex > 0) {
         const key = line.substring(0, colonIndex).trim();
         let value = line.substring(colonIndex + 1).trim();
-        
+
         if (
           (value.startsWith('"') && value.endsWith('"')) ||
           (value.startsWith("'") && value.endsWith("'"))
         ) {
           value = value.slice(1, -1);
         }
-        
+
         if (key === 'tags' && value.startsWith('[') && value.endsWith(']')) {
           try {
             value = JSON.parse(value.replace(/'/g, '"'));
@@ -62,7 +62,7 @@ function parseAndRenderMarkdown(rawContent) {
             value = value.slice(1, -1).split(',').map(tag => tag.trim().replace(/^['"]|['"]$/g, ''));
           }
         }
-        
+
         metadata[key] = value;
       }
     });
@@ -86,7 +86,7 @@ function parseAndRenderMarkdown(rawContent) {
 
   // marked.js 설정 및 렌더링
   marked.setOptions({
-    highlight: function(code, lang) {
+    highlight: function (code, lang) {
       if (Prism.languages[lang]) {
         return Prism.highlight(code, Prism.languages[lang], lang);
       }
@@ -107,22 +107,22 @@ function loadGiscus() {
 
   const script = document.createElement('script');
   script.src = 'https://giscus.app/client.js';
-  
+
   // Giscus 설정 - PLAN.md 4단계 참조하여 나중에 값 변경 필요
   script.setAttribute('data-repo', 'Dani-dong/Dani-dong.github.io');
   script.setAttribute('data-repo-id', 'R_kgDOSXY9hA');
-  script.setAttribute('data-category', 'General');
+  script.setAttribute('data-category', 'Announcements');
   script.setAttribute('data-category-id', 'DIC_kwDOSXY9hM4C8jY5');
-  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-mapping', 'title');
   script.setAttribute('data-strict', '0');
   script.setAttribute('data-reactions-enabled', '1');
   script.setAttribute('data-emit-metadata', '1');
   script.setAttribute('data-input-position', 'bottom');
-  
+
   // 현재 테마 확인 후 Giscus 테마 설정
   const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
   script.setAttribute('data-theme', currentTheme);
-  
+
   script.setAttribute('data-lang', 'ko');
   script.setAttribute('crossorigin', 'anonymous');
   script.async = true;
