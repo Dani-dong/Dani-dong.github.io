@@ -94,28 +94,3 @@ posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
 fs.writeFileSync(outputFile, JSON.stringify(posts, null, 2));
 console.log(`Generated posts.json with ${posts.length} posts`);
-
-// README.md 업데이트 로직 추가
-const readmePath = 'README.md';
-if (fs.existsSync(readmePath)) {
-  let readmeContent = fs.readFileSync(readmePath, 'utf8');
-  
-  const startMarker = '<!-- LATEST_POSTS_START -->';
-  const endMarker = '<!-- LATEST_POSTS_END -->';
-  
-  const startIndex = readmeContent.indexOf(startMarker);
-  const endIndex = readmeContent.indexOf(endMarker);
-  
-  if (startIndex !== -1 && endIndex !== -1) {
-    const recentPosts = posts.slice(0, 5).map(post => 
-      `- [${post.title}](https://Dani-dong.github.io/post.html?file=${encodeURIComponent(post.file)}) - ${post.date}`
-    ).join('\n');
-    
-    const newReadmeContent = readmeContent.substring(0, startIndex + startMarker.length) +
-      '\n' + recentPosts + '\n' +
-      readmeContent.substring(endIndex);
-      
-    fs.writeFileSync(readmePath, newReadmeContent);
-    console.log('README.md updated with latest posts.');
-  }
-}
