@@ -85,6 +85,7 @@ const posts = files.map((filename) => {
     tags: Array.isArray(metadata.tags) ? metadata.tags : [],
     category: metadata.category || '',
     description: metadata.description || '',
+    thumbnail: metadata.thumbnail || '',
     excerpt: excerpt + (excerpt.length === 200 ? '...' : ''),
   };
 });

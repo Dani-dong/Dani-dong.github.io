@@ -33,14 +33,17 @@ function renderPosts(posts) {
 
   postListSection.innerHTML = posts.map(post => `
     <article class="post-card">
-      <h2><a href="post.html?file=${encodeURIComponent(post.file)}">${post.title}</a></h2>
-      <div class="meta">
-        <span>📅 ${post.date}</span>
-        ${post.category ? `<span class="category">📁 ${post.category}</span>` : ''}
-      </div>
-      <p class="excerpt">${post.excerpt}</p>
-      <div class="tags">
-        ${post.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}
+      ${post.thumbnail ? `<a href="post.html?file=${encodeURIComponent(post.file)}" class="post-thumbnail-link"><img src="${post.thumbnail}" alt="${post.title}" class="post-thumbnail"></a>` : ''}
+      <div class="post-card-content">
+        <h2><a href="post.html?file=${encodeURIComponent(post.file)}">${post.title}</a></h2>
+        <div class="meta">
+          <span>📅 ${post.date}</span>
+          ${post.category ? `<span class="category">📁 ${post.category}</span>` : ''}
+        </div>
+        <p class="excerpt">${post.excerpt}</p>
+        <div class="tags">
+          ${post.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}
+        </div>
       </div>
     </article>
   `).join('');
