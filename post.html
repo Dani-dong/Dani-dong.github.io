@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post - Developer Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1><a href="index.html">My Blog</a></h1>
+      <nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon">🌓</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post-container">
+      <header class="post-header">
+        <h1 id="post-title">Loading...</h1>
+        <div class="post-meta">
+          <span id="post-date"></span>
+          <span id="post-category" class="category"></span>
+        </div>
+        <div id="post-tags" class="tags"></div>
+      </header>
+      <div id="post-content" class="markdown-body">
+        <!-- 마크다운 변환 내용이 여기에 렌더링됩니다 -->
+      </div>
+    </article>
+
+    <div class="comments-section">
+      <h3>Comments</h3>
+      <div class="giscus"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- CDN Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+
+  <!-- Local Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/post-loader.js"></script>
+</body>
+</html>

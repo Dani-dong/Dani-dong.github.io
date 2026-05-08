@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1><a href="index.html">My Blog</a></h1>
+      <nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon">🌓</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="검색어를 입력하세요...">
+    </div>
+    
+    <div class="filters">
+      <div id="tag-filters"></div>
+    </div>
+
+    <section id="post-list" class="post-list">
+      <!-- 게시글 목록이 여기에 동적으로 렌더링됩니다 -->
+      <p>게시글을 불러오는 중...</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
