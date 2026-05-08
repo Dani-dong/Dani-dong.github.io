@@ -110,9 +110,9 @@ function loadGiscus() {
   
   // Giscus 설정 - PLAN.md 4단계 참조하여 나중에 값 변경 필요
   script.setAttribute('data-repo', 'Dani-dong/Dani-dong.github.io');
-  script.setAttribute('data-repo-id', 'YOUR_REPO_ID');
+  script.setAttribute('data-repo-id', 'R_kgDOSXY9hA');
   script.setAttribute('data-category', 'General');
-  script.setAttribute('data-category-id', 'YOUR_CATEGORY_ID');
+  script.setAttribute('data-category-id', 'DIC_kwDOSXY9hM4C8jY5');
   script.setAttribute('data-mapping', 'pathname');
   script.setAttribute('data-strict', '0');
   script.setAttribute('data-reactions-enabled', '1');
