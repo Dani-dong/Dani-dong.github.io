@@ -11,16 +11,6 @@
   },
 
   {
-    "slug": "insta-influencer-analysis",
-    "title": "인스타그램 인플루언서 분석 - 진짜 영향력 찾기",
-    "summary": "Top 200 계정 데이터로 마케팅 고효율 타겟을 발굴하다",
-    "thumbnail": "images/2.png",
-    "date": "2026-05-12",
-    "tags": ["pandas", "Tableau", "마케팅데이터"],
-    "category": "데이터분석",
-    "techStack": ["Python", "pandas", "Tableau"]
-  },
-  {
     "file": "portfolio.md",
     "title": "인스타그램 인플루언서 광고 효율 데이터 분석",
     "date": "2026-05-08",
