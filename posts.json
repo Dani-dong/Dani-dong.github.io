@@ -3,7 +3,7 @@
     "slug": "ai-dependency-analysis",
     "title": "AI 의존도와 진로 불안 - 학생들은 왜 불안해할까?",
     "summary": "15,000명의 학생 데이터로 분석한 AI 활용 역설과 교육적 해결책",
-    "thumbnail": "images/ai-dependency-analysis-thumbnail.png",
+    "thumbnail": "images/메인.png",
     "date": "2026-05-12",
     "tags": ["pandas", "EDA", "교육데이터"],
     "category": "데이터분석",
