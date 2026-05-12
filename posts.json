@@ -1,14 +1,5 @@
 [
-  {
-    "slug": "ai-dependency-analysis",
-    "title": "AI 의존도와 진로 불안 - 학생들은 왜 불안해할까?",
-    "summary": "15,000명의 학생 데이터로 분석한 AI 활용 역설과 교육적 해결책",
-    "thumbnail": "images/메인.png",
-    "date": "2026-05-12",
-    "tags": ["pandas", "EDA", "교육데이터"],
-    "category": "데이터분석",
-    "techStack": ["Python", "pandas", "seaborn"]
-  },
+
   {
     "slug": "insta-influencer-analysis",
     "title": "인스타그램 인플루언서 분석 - 진짜 영향력 찾기",
