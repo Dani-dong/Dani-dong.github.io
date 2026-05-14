@@ -40,7 +40,7 @@ function renderPosts(posts) {
           <span>📅 ${post.date}</span>
           ${post.category ? `<span class="category">📁 ${post.category}</span>` : ''}
         </div>
-        <p class="excerpt">${post.excerpt}</p>
+        <p class="excerpt">${post.summary || post.excerpt || ''}</p>
         <div class="tags">
           ${post.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}
         </div>

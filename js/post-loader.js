@@ -94,7 +94,9 @@ function parseAndRenderMarkdown(rawContent) {
     }
   });
 
-  const htmlContent = marked.parse(markdownContent);
+  // 이미지 경로 수정 (../images/ -> images/)
+  const correctedMarkdown = markdownContent.replace(/\.\.\/images\//g, 'images/');
+  const htmlContent = marked.parse(correctedMarkdown);
   document.getElementById('post-content').innerHTML = htmlContent;
 
   // Prism.js 수동 실행 (필요한 경우)

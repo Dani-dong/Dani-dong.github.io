@@ -1,58 +1,57 @@
 [
   {
+    "slug": "crawling-practical",
     "file": "crawling-practical.md",
     "title": "실전! 사람인 채용공고 완전 공략",
     "summary": "사람인 채용공고를 자동으로 수집하고 분석하는 실전 웹 크롤링 프로젝트",
-    "thumbnail": "images/crawling_practical.png",
+    "thumbnail": "images/crawling-practical-thumbnail.png",
     "date": "2026-05-13",
     "tags": ["Python", "Pandas", "Crawling"],
-    "category": "Crawling"
+    "category": "Crawling",
+    "techStack": ["Python", "Pandas", "Requests"]
   },
   {
+    "slug": "crawling-basics",
     "file": "crawling-basics.md",
     "title": "BeautifulSoup 완전 정복 - HTML 데이터 추출",
     "summary": "HTML 구조 이해부터 BeautifulSoup 핵심 함수 활용까지, 크롤링의 기초 다지기",
-    "thumbnail": "images/crawling_basics.png",
+    "thumbnail": "images/crawling-basics-thumbnail.png",
     "date": "2026-05-13",
     "tags": ["BeautifulSoup", "Python", "Crawling"],
-    "category": "Crawling"
+    "category": "Crawling",
+    "techStack": ["Python", "BeautifulSoup"]
   },
   {
     "slug": "ai-dependency-analysis",
+    "file": "ai-dependency-analysis.md",
     "title": "AI 의존도와 진로 불안 - 학생들은 왜 불안해할까?",
     "summary": "15,000명의 학생 데이터로 분석한 AI 활용 역설과 교육적 해결책",
-    "thumbnail": "images/메인.png",
+    "thumbnail": "images/ai-dependency-analysis-thumbnail.png",
     "date": "2026-05-12",
     "tags": ["pandas", "EDA", "교육데이터"],
     "category": "데이터분석",
     "techStack": ["Python", "pandas", "seaborn"]
   },
-
   {
+    "slug": "instagram-influencer-analysis",
     "file": "portfolio.md",
     "title": "인스타그램 인플루언서 광고 효율 데이터 분석",
-    "date": "2026-05-08",
-    "tags": [
-      "Python",
-      "pandas",
-      "Tableau"
-    ],
-    "category": "Portfolio",
-    "description": "인스타그램 인플루언서에 대한 광고 효율 데이터 분석 프로젝트입니다.",
+    "summary": "인스타그램 인플루언서에 대한 광고 효율 데이터 분석 프로젝트입니다.",
     "thumbnail": "https://public.tableau.com/static/images/2_/2__17781246431770/___1/1.png",
-    "excerpt": ": (https://github.com/Dani-dong/project_01_instagram_influencer_analysis.git) <br/> 데이터 분석 첫번째 프로젝트 인스타그램 인플루언서에 대한 광고 효율 데이터 분석 -  : Python -  : pandas -  : Google Colab, Tableau -  : Google <div sty..."
+    "date": "2026-05-08",
+    "tags": ["Python", "pandas", "Tableau"],
+    "category": "Portfolio",
+    "techStack": ["Python", "pandas", "Tableau"]
   },
   {
+    "slug": "first-post",
     "file": "example.md",
     "title": "첫 번째 게시글",
-    "date": "2025-01-26",
-    "tags": [
-      "JavaScript",
-      "Web"
-    ],
-    "category": "Development",
-    "description": "게시글 설명",
+    "summary": "이것은 첫 번째 게시글의 내용입니다.",
     "thumbnail": "",
-    "excerpt": "이것은 첫 번째 게시글의 내용입니다. 코드 예시:"
+    "date": "2025-01-26",
+    "tags": ["JavaScript", "Web"],
+    "category": "Development",
+    "techStack": ["JavaScript", "HTML", "CSS"]
   }
 ]

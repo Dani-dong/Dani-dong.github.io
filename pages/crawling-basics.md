@@ -1,9 +1,9 @@
 ---
-title: "BeautifulSoup 완전 정복 - HTML에서 데이터 추출하기"
+title: "BeautifulSoup 완전 정복 - HTML 데이터 추출"
 date: "2026-05-13"
 category: "Crawling"
 tags: ["Python", "BeautifulSoup", "Web Crawling"]
-thumbnail: "images/crawling_basics.png"
+thumbnail: "../images/crawling-basics-thumbnail.png"
 ---
 
 # 🍜 BeautifulSoup 완전 정복

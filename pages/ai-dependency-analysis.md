@@ -1,8 +1,16 @@
+---
+title: "AI 의존도와 진로 불안 - 학생들은 왜 불안해할까?"
+date: "2026-05-12"
+category: "데이터분석"
+tags: ["pandas", "EDA", "교육데이터"]
+thumbnail: "../images/ai-dependency-analysis-thumbnail.png"
+---
+
 # 🏷 AI 의존도와 진로 불안 - 학생들은 왜 불안해할까?
 
 > 15,000명의 학생 데이터를 분석하여 AI 활용 능력이 취업 불안감에 미치는 영향을 파악하고, 교육적 시사점을 도출하다.
 
-![대표 이미지](../images/메인.png)
+![대표 이미지](../images/ai-dependency-analysis-thumbnail.png)
 
 ---
 
