@@ -1,5 +1,16 @@
 [
   {
+    "slug": "api-dataframe",
+    "file": "2026-05-15.md",
+    "title": "공공 API로 데이터 수집 & pandas DataFrame 만들기",
+    "summary": "공공데이터포털 API 호출부터 for문으로 원하는 컬럼만 추출해 DataFrame 만드는 전 과정",
+    "thumbnail": "images/api-dataframe-thumbnail.png",
+    "date": "2026-05-15",
+    "tags": ["Python", "pandas", "API", "DataFrame"],
+    "category": "데이터수집",
+    "techStack": ["Python", "requests", "pandas"]
+  },
+  {
     "slug": "crawling-practical",
     "file": "crawling-practical.md",
     "title": "실전! 사람인 채용공고 완전 공략",
