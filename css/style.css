@@ -7,6 +7,15 @@
   --card-bg: #ffffff;
   --tag-bg: #e2e8f0;
   --tag-text: #4a5568;
+
+  /* ===== Chatbot Style Variables ===== */
+  --chat--window--width: 600px;
+  --chat--window--height: 800px;
+  --chat--toggle--size: 70px;
+  --chat--message--font-size: 16px;
+  --chat--header--height: 60px;
+  --chat--textarea--height: 60px;
+  --chat--input--font-size: 15px;
 }
 
 [data-theme='dark'] {
