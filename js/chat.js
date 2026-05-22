@@ -417,23 +417,42 @@
         })
       });
 
+      // Show specific status error if HTTP status is not OK
       if (!response.ok) {
-        throw new Error('Network response was not ok: ' + response.statusText);
+        let errText = '';
+        try {
+          errText = await response.text();
+        } catch(e) {}
+        throw new Error(`HTTP ${response.status} ${response.statusText}${errText ? ': ' + errText : ''}`);
       }
 
-      const data = await response.json();
+      const responseText = await response.text();
+      let data;
+      try {
+        data = JSON.parse(responseText);
+      } catch (parseError) {
+        // Fallback if n8n returned a raw string instead of a JSON object
+        data = { output: responseText };
+      }
       
       // Hide typing indicator
       typingIndicator.style.display = 'none';
 
       // Determine answer output
       let botResponse = '';
-      if (data && data.output) {
-        botResponse = data.output;
-      } else if (data && typeof data === 'object') {
-        botResponse = data.message || JSON.stringify(data);
+      
+      // Defensive extraction of output parameter (supporting double JSON stringify)
+      let parsedData = data;
+      if (typeof parsedData === 'string') {
+        try { parsedData = JSON.parse(parsedData); } catch(e) {}
+      }
+      
+      if (parsedData && parsedData.output) {
+        botResponse = parsedData.output;
+      } else if (parsedData && typeof parsedData === 'object') {
+        botResponse = parsedData.message || JSON.stringify(parsedData);
       } else {
-        botResponse = '대답을 수신하는 데 실패했습니다.';
+        botResponse = responseText || '대답을 수신하는 데 실패했습니다.';
       }
 
       // Add bot response to UI
@@ -442,7 +461,18 @@
     } catch (error) {
       console.error('Error sending message:', error);
       typingIndicator.style.display = 'none';
-      addMessage('죄송합니다. 서버 통신 중 오류가 발생했습니다.', 'bot');
+      
+      // Determine user-friendly diagnostics
+      let friendlyError = '서버 통신 중 오류가 발생했습니다.';
+      if (error.message.includes('HTTP 500')) {
+        friendlyError += '\n(n8n 서버 내부 에러가 발생했습니다. 구글 시트 노드의 Spreadsheet ID 설정 및 Credential 연동 상태를 n8n에서 확인해주세요!)';
+      } else if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+        friendlyError += '\n(네트워크 연결 실패: n8n 워크플로우 활성화 여부 및 CORS 설정을 확인해주세요!)';
+      } else {
+        friendlyError += `\n(${error.message})`;
+      }
+      
+      addMessage(friendlyError, 'bot');
     }
   }
 
