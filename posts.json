@@ -1,101 +1,129 @@
 [
   {
-    "slug": "toss-analysis",
+    "file": "daemosan-hotel-bi.md",
+    "title": "[포트폴리오] 대모산 호텔 비즈니스 분석 대시보드 (BI) - 12만 행 고성능 시각화",
+    "date": "2026-05-26",
+    "tags": [
+      "Next.js",
+      "데이터시각화",
+      "비즈니스분석",
+      "TailwindCSS"
+    ],
+    "category": "Portfolio",
+    "description": "12만 행의 대용량 예약 데이터를 즉시 교차 필터링하고 취소율 및 ADR을 분석하는 고성능 비즈니스 대시보드",
+    "thumbnail": "images/daemosan-hotel-bi-thumbnail.png",
+    "excerpt": "> 입니다. !(../images/daemosan-hotel-bi-thumbnail.png) --- `Next.js` `Recharts` `PapaParse` `TailwindCSS` `TypeScript` `lucide-react` - 💡  차이) - 💡  입증. - 💡 하는 시즌성 양면 트렌드 포착. - 🐙 (https://github.com/D..."
+  },
+  {
     "file": "toss-analysis.md",
     "title": "[기업분석] 비바리퍼블리카 (토스) 분석 요약",
-    "summary": "금융 수퍼앱을 넘어 유저의 일상과 체류 시간을 점유하는 타임라인 플랫폼으로의 진화",
-    "thumbnail": "images/toss-analysis-thumbnail.png",
     "date": "2026-05-21",
-    "tags": ["핀테크", "기업분석", "토스"],
+    "tags": [
+      "핀테크",
+      "기업분석",
+      "토스"
+    ],
     "category": "Research",
-    "techStack": ["Toss", "Fintech", "RAG"]
+    "description": "",
+    "thumbnail": "../images/toss-analysis-thumbnail.png",
+    "excerpt": "> 토스는 단순 금융 앱을 넘어 게이미피케이션과 커뮤니티를 결합해 유저의 일상 점유율을 극대화하는 '금융 기반의 타임라인 플랫폼'으로 진화하고 있다. !(../images/toss-analysis-thumbnail.png) --- `Fintech` `Super-App` `RAG` `LLM` `Gamification` - 💡 : 토스는 단순한 금융 송금 앱..."
   },
   {
-    "slug": "musinsa-analysis",
     "file": "musinsa-analysis.md",
     "title": "[기업분석] 주식회사 무신사 분석 요약",
-    "summary": "온·오프라인 생태계 통합과 글로벌 확장을 통해 K-패션의 독점적 플랫폼으로 도약하는 무신사",
-    "thumbnail": "images/musinsa-analysis-thumbnail.png",
     "date": "2026-05-21",
-    "tags": ["패션커머스", "기업분석", "무신사"],
+    "tags": [
+      "패션커머스",
+      "기업분석",
+      "무신사"
+    ],
     "category": "Research",
-    "techStack": ["Musinsa", "Commerce", "LLM"]
+    "description": "",
+    "thumbnail": "../images/musinsa-analysis-thumbnail.png",
+    "excerpt": "> 무신사는 온·오프라인 생태계 통합과 글로벌 영토 확장을 통해 단순 패션 커머스를 넘어 K-패션의 독점적 플랫폼 지위를 굳히고 있다. !(../images/musinsa-analysis-thumbnail.png) --- `Commerce` `Fashion-Tech` `PB-Brand` `Global-Expansion` `LLM` - 💡 : 무신사는 자체..."
   },
   {
-    "slug": "google-llc-analysis",
     "file": "google-llc-analysis.md",
     "title": "[AI 리포트] Google LLC 분석 요약",
-    "summary": "검색 광고 패러다임의 종말과 생성형 AI 비서로의 전환점에서, 구글의 생존 전략을 분석하다",
-    "thumbnail": "images/google-llc-analysis-thumbnail.png",
     "date": "2026-05-21",
-    "tags": ["빅테크", "기업분석", "Gemini"],
+    "tags": [
+      "빅테크",
+      "기업분석",
+      "Gemini"
+    ],
     "category": "Research",
-    "techStack": ["Gemini", "SGE", "AI"]
+    "description": "",
+    "thumbnail": "../images/google-llc-analysis-thumbnail.png",
+    "excerpt": "> 검색 광고 패러다임의 종말과 생성형 AI 비서로의 전환점에서, 구글은 단순한 정보 탐색 도구를 넘어 사용자의 실시간 행동을 점유하는 통합 AI 생태계로 진화해야만 생존할 수 있다. !(../images/google-llc-analysis-thumbnail.png) --- `Gemini` `SGE` `AI` `Search Engine` `Competito..."
   },
   {
-    "slug": "api-dataframe",
-    "file": "2026-05-15.md",
-    "title": "공공 API로 데이터 수집 & pandas DataFrame 만들기",
-    "summary": "공공데이터포털 API 호출부터 for문으로 원하는 컬럼만 추출해 DataFrame 만드는 전 과정",
-    "thumbnail": "images/api-dataframe-thumbnail.png",
-    "date": "2026-05-15",
-    "tags": ["Python", "pandas", "API", "DataFrame"],
-    "category": "데이터수집",
-    "techStack": ["Python", "requests", "pandas"]
-  },
-  {
-    "slug": "crawling-practical",
     "file": "crawling-practical.md",
-    "title": "실전! 사람인 채용공고 완전 공략",
-    "summary": "사람인 채용공고를 자동으로 수집하고 분석하는 실전 웹 크롤링 프로젝트",
-    "thumbnail": "images/crawling-practical-thumbnail.png",
+    "title": "사람인 채용공고 크롤링: 사회복지 → 노인복지 심화 분석",
     "date": "2026-05-13",
-    "tags": ["Python", "Pandas", "Crawling"],
+    "tags": [
+      "Python",
+      "BeautifulSoup",
+      "Pandas",
+      "크롤링"
+    ],
     "category": "Crawling",
-    "techStack": ["Python", "Pandas", "Requests"]
+    "description": "",
+    "thumbnail": "images/crawling_practical.png",
+    "excerpt": "이번 포스팅에서는 로 심화 분석하는 과정을 소개합니다. --- 단순히 데이터를 긁어오는 것에 그치지 않고, 라는 전략으로 접근했습니다. 먼저 `사회복지`라는 넓은 키워드로 사이트 검색을 통해 41건의 데이터를 수집했습니다. 이 단계에서 데이터를 살펴보니, 병원 사회복지사, 지역아동센터, 장애인 활동지원, 노인복지 등 되어 있었습니다. 1단계 데이터를 분석한..."
   },
   {
-    "slug": "crawling-basics",
     "file": "crawling-basics.md",
     "title": "BeautifulSoup 완전 정복 - HTML 데이터 추출",
-    "summary": "HTML 구조 이해부터 BeautifulSoup 핵심 함수 활용까지, 크롤링의 기초 다지기",
-    "thumbnail": "images/crawling-basics-thumbnail.png",
     "date": "2026-05-13",
-    "tags": ["BeautifulSoup", "Python", "Crawling"],
+    "tags": [
+      "Python",
+      "BeautifulSoup",
+      "Web Crawling"
+    ],
     "category": "Crawling",
-    "techStack": ["Python", "BeautifulSoup"]
+    "description": "",
+    "thumbnail": "../images/crawling-basics-thumbnail.png",
+    "excerpt": "웹 크롤링의 첫 단추는 바로 입니다. 파이썬의 `BeautifulSoup` 라이브러리를 활용하면 복잡한 HTML 문서도 아주 쉽게 요리할 수 있습니다. --- 데이터를 찾을 때 가장 많이 사용하는 4가지 함수를 정리했습니다. - 조건에 맞는  태그 하나만 반환합니다. - 클래스명으로 찾을 때는 `class_` (언더바 포함)를 사용해야 합니다. - 결과값으..."
   },
   {
-    "slug": "ai-dependency-analysis",
     "file": "ai-dependency-analysis.md",
     "title": "AI 의존도와 진로 불안 - 학생들은 왜 불안해할까?",
-    "summary": "15,000명의 학생 데이터로 분석한 AI 활용 역설과 교육적 해결책",
-    "thumbnail": "images/ai-dependency-analysis-thumbnail.png",
     "date": "2026-05-12",
-    "tags": ["pandas", "EDA", "교육데이터"],
+    "tags": [
+      "pandas",
+      "EDA",
+      "교육데이터"
+    ],
     "category": "데이터분석",
-    "techStack": ["Python", "pandas", "seaborn"]
+    "description": "",
+    "thumbnail": "../images/ai-dependency-analysis-thumbnail.png",
+    "excerpt": "> 15,000명의 학생 데이터를 분석하여 AI 활용 능력이 취업 불안감에 미치는 영향을 파악하고, 교육적 시사점을 도출하다. !(../images/ai-dependency-analysis-thumbnail.png) --- `Python` `pandas` `seaborn` `데이터 전처리` `EDA` - 💡 : AI 의존도가 높을수록 취업 불안감이 비례하..."
   },
   {
-    "slug": "instagram-influencer-analysis",
     "file": "portfolio.md",
     "title": "인스타그램 인플루언서 광고 효율 데이터 분석",
-    "summary": "인스타그램 인플루언서에 대한 광고 효율 데이터 분석 프로젝트입니다.",
-    "thumbnail": "https://public.tableau.com/static/images/2_/2__17781246431770/___1/1.png",
     "date": "2026-05-08",
-    "tags": ["Python", "pandas", "Tableau"],
+    "tags": [
+      "Python",
+      "pandas",
+      "Tableau"
+    ],
     "category": "Portfolio",
-    "techStack": ["Python", "pandas", "Tableau"]
+    "description": "인스타그램 인플루언서에 대한 광고 효율 데이터 분석 프로젝트입니다.",
+    "thumbnail": "https://public.tableau.com/static/images/2_/2__17781246431770/___1/1.png",
+    "excerpt": ": (https://github.com/Dani-dong/project_01_instagram_influencer_analysis.git) <br/> 데이터 분석 첫번째 프로젝트 인스타그램 인플루언서에 대한 광고 효율 데이터 분석 -  : Python -  : pandas -  : Google Colab, Tableau -  : Google <div sty..."
   },
   {
-    "slug": "first-post",
     "file": "example.md",
     "title": "첫 번째 게시글",
-    "summary": "이것은 첫 번째 게시글의 내용입니다.",
-    "thumbnail": "",
     "date": "2025-01-26",
-    "tags": ["JavaScript", "Web"],
+    "tags": [
+      "JavaScript",
+      "Web"
+    ],
     "category": "Development",
-    "techStack": ["JavaScript", "HTML", "CSS"]
+    "description": "게시글 설명",
+    "thumbnail": "",
+    "excerpt": "이것은 첫 번째 게시글의 내용입니다. 코드 예시:"
   }
 ]
