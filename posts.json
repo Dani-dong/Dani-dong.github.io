@@ -1,5 +1,27 @@
 [
   {
+    "slug": "seoul-real-estate-eda",
+    "file": "seoul-real-estate-eda.md",
+    "title": "서울시 부동산 실거래가 탐색적 데이터 분석",
+    "summary": "13,038건의 서울시 부동산 실거래가 데이터를 활용한 탐색적 데이터 분석 실습",
+    "description": "13,038건의 서울시 부동산 실거래가 데이터를 활용한 탐색적 데이터 분석 실습",
+    "thumbnail": "images/seoul-real-estate-eda-thumbnail.png",
+    "date": "2026-06-09",
+    "tags": [
+      "pandas",
+      "EDA",
+      "데이터시각화"
+    ],
+    "category": "데이터분석",
+    "techStack": [
+      "Python",
+      "pandas",
+      "matplotlib",
+      "seaborn"
+    ],
+    "excerpt": "> 13,038건의 서울시 부동산 실거래가 데이터를 활용한 탐색적 데이터 분석(EDA) 실습 !(../images/seoul-real-estate-eda-thumbnail.png) --- `Python` `pandas` `matplotlib` `seaborn` `missingno` - 💡 13,038건 중 토지면적 결측치 382건 등 초기 데이터에 결측치가 존재함을 확인"
+  },
+  {
     "file": "daemosan-hotel-bi.md",
     "title": "[포트폴리오] 대모산 호텔 비즈니스 분석 대시보드 (BI) - 12만 행 고성능 시각화",
     "date": "2026-05-26",
