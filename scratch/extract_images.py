@@ -22,21 +22,11 @@ try:
                     image_count += 1
                     base64_data = output['data']['image/png']
                     
-                    filename = ''
-                    if image_count == 1:
-                        filename = 'seoul-real-estate-eda-chart1.png'
-                    elif image_count == 2:
-                        filename = 'seoul-real-estate-eda-chart2.png'
-                    elif image_count == 3:
-                        filename = 'seoul-real-estate-eda-chart3.png'
-                    elif image_count == 4:
-                        filename = 'seoul-real-estate-eda-chart4.png'
-                    
-                    if filename:
-                        filepath = os.path.join(output_dir, filename)
-                        with open(filepath, "wb") as fh:
-                            fh.write(base64.b64decode(base64_data))
-                        print(f"Saved {filepath}")
+                    filename = f'seoul-real-estate-eda-chart{image_count}.png'
+                    filepath = os.path.join(output_dir, filename)
+                    with open(filepath, "wb") as fh:
+                        fh.write(base64.b64decode(base64_data))
+                    print(f"Saved {filepath}")
 
         # Create thumbnail by copying chart1
         import shutil
